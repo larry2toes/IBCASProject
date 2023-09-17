@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en-US">
+
+	<head>
+		<!-- Script Initialization -->
+		<script src="static/js/vote.js"></script>
+
+		<!-- Document Information -->
+
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+		<!-- Stylesheets & Icons -->
+		<link rel="stylesheet" href="static/css/index.css">
+
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+		<link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+
+			<!-- ignore this it's just for the icons, might remove them later tbh-->
+		<script src="https://kit.fontawesome.com/30107543c9.js" crossorigin="anonymous"></script>
+
+		<!-- SEO Information -->
+
+		<meta name="description" content="A message board for students at Lincoln to voice their opinions truthfully and honestly.">
+		<meta name="keywords" content="LCPA, Lincoln, KCPS, Kansas City Public Schools, KCPSD, Kansas City 33, Kansas City 33 District">
+		<link rel="canonical" href=":P"> <!--Add this in once we have a url-->
+		<meta name="robots" content="index,follow">
+        <meta name="googlebot" content="index,follow">
+
+		<!-- EMBEDS -->
+			<!-- Probably will need one for instagram -->
+		<meta name="theme-color" content="#32A6ED">
+
+        <meta property="og:title" content="#">
+        <meta property="og:description" content="A message board for students at Lincoln to voice their opinions truthfully and honestly.">
+        <meta property="og:site_name" content="#">
+        <meta property="og:image" content="#">
+
+		<!-- MISC -->
+		<title>Starter HTML</title>
+		
+	</head>
+
+	<body>
+
+		<main>
+
+			<section id="message-board">
+
+				<article class="message">
+
+					<div class="message-header">
+
+						<h3 class="name">Name</h3>
+						<time datetime="1996-12-19">3:30pm</time>
+
+					</div>
+
+					<!--
+						needs to set a limit
+						if you don't think there should be one I can edit the styles to allow
+						for a longer post or to account for post lengths
+					-->
+					<p class="message-description">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Assumenda est natus iste amet quidem animi. </p>
+
+					<div class="inputs">
+						<!--Not set in stone-->
+
+						<p>Likes: <span class="counter-likes">0</span></p>
+						<p>Dislikes: <span class="counter-dislikes">0</span></p>
+						<br>
+
+						<button onclick="upvote(this)" class="thumbs-up">
+
+							<i class="fa-regular fa-thumbs-up"></i> <!--This is for the icons, again-->
+							Like
+
+						</button>
+
+						<button class="thumbs-down">
+
+							<i class="fa-regular fa-thumbs-down"></i>
+							Dislike
+
+						</button>
+
+					</div>
+
+				</article>
+
+			</section>
+
+		</main>
+
+		<script href="something.js"></script>
+
+	</body>
+</html>

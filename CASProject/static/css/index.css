@@ -1,0 +1,65 @@
+:root{
+	--font-family: "Inter", sans-serif;
+}
+
+html{
+	overflow: hidden; /* REMOVE */
+	height: 100%;
+	width: 100%;
+}
+
+body{
+	margin: 0;
+	height: 100%;
+	width: 100%;
+}
+
+main{
+	height: 100%;
+	width: 100%;
+}
+
+#message-board{
+	display: flex;
+	justify-content: space-evenly;
+	padding: 1rem;
+	height: calc(100% - 1rem); 
+	width: calc(100% - 1rem);
+}
+
+.message{
+	display: flex;
+	flex-direction: column;
+	padding: 0.5rem;
+	height: 10.5rem;
+	width: 14.5rem;
+	background-color: blue;
+	outline: 2px solid black;
+	border-radius: 0.25rem;
+}
+
+.message-header{
+	display: flex;
+	justify-content: space-between;
+	margin-bottom: 0.5em;
+}
+
+.name{
+	font-size: 1.25em;
+	font-weight: 500;
+}
+
+time{
+	font-size: 0.75em;
+	font-weight: 300;
+}
+
+.inputs{
+	margin-top: auto;
+}
+
+h1, h2, h3, h4, h5, h6, a, p, time{
+	all: unset;
+	font-family: var(--font-family);
+	width: fit-content;
+}

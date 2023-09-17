@@ -1,0 +1,2 @@
+upvote/downvote post data structure:
+POST : { 'id' = 1234 }
