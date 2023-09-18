@@ -11,7 +11,7 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
 		<!-- Stylesheets & Icons -->
-		<link rel="stylesheet" href="static/css/index.css">
+		<link rel="stylesheet" href="../static/css/index.css">
 
 		<link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -46,8 +46,50 @@
 
 		<main>
 
-			<section id="message-board">
+			<button onclick="doSomethingToOpenTheForm()" id="display-form"><i class="fa-solid fa-plus"></i></button>
 
+			<form
+				id="create-post"
+
+				name="message-form"
+				action="#"
+				onsubmit="doSomething()"
+				method="idkmanlinclinclemmeknowwhattoputhere"
+			>
+				<h3>Create a Post!</h3>
+
+				<label for="name">Add a Name</label>
+				<input
+					id="displayName"
+
+					type="text"
+					name="name"
+					placeholder="Start writing"
+					minlength="3"
+					maxlength="15"
+					pattern="/^[A-Z]+$/"
+					required
+				>
+
+				<label for="description">Add a Description</label>
+				<input
+					id="displayDescription"
+
+					type="text"
+					name="description"
+					placeholder="Start writing"
+					minlength="10"
+					maxlength="50"
+					pattern="/^[A-Z]+$/"
+					required
+				>
+
+				<button id="submit-post" onclick="doSomething()" type="submit" value="Submit">Submit</button>
+
+			</form>
+
+			<section id="message-board">
+				
 				<article class="message">
 
 					<div class="message-header">
